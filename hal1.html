@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pilihan</title> <!-- Menentukan judul halaman -->
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS untuk gaya tampilan -->
+</head>
+<body>
+
+    <header>
+        <img src="ardellkansha.jpeg" alt="Logo" class="header-img"> <!-- Menampilkan gambar logo -->
+        <h1>Ardell Aurelio Kansha / 235314040</h1> <!-- Menampilkan nama dan nomor identitas -->
+    </header>
+
+    <div class="container">
+        <h2>Isi Nama dan Pilih Jumlah</h2> <!-- Judul bagian formulir -->
+        <div class="form-group">
+            <label for="name">Nama :</label> <!-- Label untuk input nama -->
+            <input type="text" id="name"> <!-- Kotak input untuk memasukkan nama -->
+        </div>
+        <div class="form-group">
+            <label for="quantity">Jumlah Pilihan :</label> <!-- Label untuk jumlah pilihan -->
+            <input type="number" id="quantity" min="1"> <!-- Input angka dengan minimal nilai 1 -->
+        </div>
+        <button id="submitBtn">OK</button> <!-- Tombol untuk mengirimkan data -->
+        <div id="choicesContainer"></div> <!-- Tempat menampilkan pilihan berdasarkan input -->
+        <div id="selectionContainer"></div> <!-- Tempat menampilkan hasil pilihan pengguna -->
+    </div>
+
+    <script src="script.js"></script> <!-- Menghubungkan file JavaScript untuk interaksi -->
+</body>
+</html>
